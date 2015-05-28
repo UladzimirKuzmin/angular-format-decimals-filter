@@ -1,0 +1,8 @@
+{
+  "name": "angular-format-decimal-filter",
+  "version": "0.0.1",
+  "main": "format-decimals.js",
+  "dependencies": {
+    "angular": "*"
+  }
+}
