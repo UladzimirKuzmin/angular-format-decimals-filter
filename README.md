@@ -24,5 +24,5 @@ angular.module('myApp', ['formatDecimals']);
 
 Use it in the view:
 ```html
-<div>{{ number | formatDecimals }}</div>
+<div>{{ number | formatDecimal }}</div>
 ```
