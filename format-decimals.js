@@ -3,8 +3,8 @@ angular.module('formatDecimal', [])
         return function(value) {
             var abbr = ['k', 'M', 'B', 'T'],
                 i = abbr.length - 1,
-                result,
-				decimal;
+                decimal,
+                result;
 
             for (i; i>=0; i--) {
                 var size = Math.pow(10, (i+1)*3);
@@ -13,7 +13,7 @@ angular.module('formatDecimal', [])
                     if (value % size < 100) {
                         result = (value/size).toFixed(0) + abbr[i];
                     } else {
-						decimal = String(value/size).split('.')[1].substr(0, 1);
+                        decimal = String(value/size).split('.')[1].substr(0, 1);
                         result = (value/size).toFixed(0) + '.' + decimal + abbr[i];
                     }
                     break;
